@@ -16,8 +16,6 @@ display = ""
 for letter in chosen_word:
     if letter == guess:
         display += letter
-        print("Right")
     else:
         display += "_"
-        print("Wrong")
 print(display)
