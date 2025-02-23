@@ -15,13 +15,13 @@ def encrypt(original_text, shift_amount):
     new_word = ""
     for letter in original_text:
         shifted_number.append(alphabet.index(letter) + shift_amount)
-    print(shifted_number)
+    #print(shifted_number)
     for number in shifted_number:
 
 # TODO-4: What happens if you try to shift z forwards by 9? Can you fix the code?
         index = number % len(alphabet)
         new_word += alphabet[index]
-    print(new_word)
+    print(f"Here is the encoded result: {new_word}")
 
 # TODO-3: Call the 'encrypt()' function and pass in the user inputs. You should be able to test the code and encrypt a
 #  message.
