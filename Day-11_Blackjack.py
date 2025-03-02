@@ -1,5 +1,5 @@
 import random
-import Day-11_Blackjack_art
+import art
 cards = [11, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10, 10, 10]
 
 def output(users_hand,users_current_score, computers_hand):
@@ -10,11 +10,21 @@ def output(users_hand,users_current_score, computers_hand):
 computers_hand = random.sample(cards, 2)
 users_hand = random.sample(cards, 2)
 
+
+
 computers_current_score =  sum(computers_hand)
 users_current_score = sum(users_hand)
+if 11 in computers_hand and computers_current_score > 21:
+    computers_hand.remove(11)
+    computers_hand.append(1)
+
+if 11 in users_hand and users_current_score > 21:
+    users_hand.remove(11)
+    users_hand.append(1)
+
+print(art.logo)
 repeat = True
 while repeat:
-    print(Day-11_Blackjack_art.logo)
     users_next_card = output(users_hand=users_hand, users_current_score=users_current_score, computers_hand=computers_hand)
     if users_next_card == "y":
         next_hand = random.choice(cards)
