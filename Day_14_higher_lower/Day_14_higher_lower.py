@@ -4,17 +4,17 @@ import game_data
 
 def game():
     global a_followers, b_followers, correct_ans
-    if correct_ans != {}:
-        choice_1 = correct_ans
+    if correct_ans == {}:
+        choice_1 = random.choice(game_data.data)
         choice_2  = random.choice(game_data.data)
     else:
-        choice_1 = random.choice(game_data.data)
+        choice_1 = correct_ans
         choice_2 = random.choice(game_data.data)
     a_followers = choice_1['follower_count']
     print(f"Compare A: {choice_1['name']}, {choice_1['description']}, from {choice_1['country']}")
     # print(a_followers)
     b_followers = choice_2['follower_count']
-    while a_followers == b_followers:
+    if a_followers == b_followers:
         choice_2 = random.choice(game_data.data)
     print(art.vs)
     print(f"Compare B: {choice_2['name']}, {choice_2['description']}, from {choice_2['country']}")
