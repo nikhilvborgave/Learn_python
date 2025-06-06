@@ -1,1 +1,7 @@
-This repository is created to store all the projects that I'll do along with the course. This will be my day by day or rather project by project learning python.
+# Learn_python
+A collection of Python scripts I'm working on to sharpen my skills.  
+- 🔹 Practice scripts
+- 🔹 Small automation ideas
+- 🔹 Might evolve into mini projects
+
+All these scripts are created while learning through udemy course by Dr. Angela Yu.
