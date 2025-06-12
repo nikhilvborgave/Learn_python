@@ -13,6 +13,6 @@ python_boto3_S3/
 #Description: 
 
 Upload_objects.py- <br>
-file can be used to upload files to s3 bucket from local.
+file can be used to upload files to s3 bucket from local. <br>
 varieables.py- <br>
-contains values like local filepath, s3 bucket name & s3 filepath.
+contains values like local filepath, s3 bucket name & s3 filepath. <br>
