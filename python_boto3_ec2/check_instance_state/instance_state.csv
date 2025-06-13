@@ -1,0 +1,2 @@
+Instance Id ,Instance Name,Public Ip,Private Ip,Status
+i-0253a437fca652094,terraform_ec2,3.92.4.163,172.31.31.191,running
